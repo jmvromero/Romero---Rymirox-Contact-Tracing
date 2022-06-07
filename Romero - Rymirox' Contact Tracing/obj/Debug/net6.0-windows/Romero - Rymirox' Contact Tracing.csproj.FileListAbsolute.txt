@@ -1,0 +1,17 @@
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.exe
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.deps.json
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.runtimeconfig.json
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\ref\Romero - Rymirox' Contact Tracing.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.pdb
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.csproj.AssemblyReference.cache
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.Form1.resources
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.csproj.GenerateResource.cache
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.AssemblyInfoInputs.cache
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.AssemblyInfo.cs
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.csproj.CoreCompileInputs.cache
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\ref\Romero - Rymirox' Contact Tracing.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.pdb
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.genruntimeconfig.cache
