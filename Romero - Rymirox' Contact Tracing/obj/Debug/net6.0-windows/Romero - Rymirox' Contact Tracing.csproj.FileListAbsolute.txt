@@ -20,3 +20,4 @@ C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox'
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.AboutScreenForm.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.RegisterScreenForm.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.FillOutForm.resources
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.ContinueOptions.resources

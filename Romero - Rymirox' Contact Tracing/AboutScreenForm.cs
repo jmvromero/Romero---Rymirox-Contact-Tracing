@@ -24,5 +24,12 @@ namespace Romero___Rymirox__Contact_Tracing
             startingScreenForm.Show();
 
         }
+
+        private void buttonASF2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutScreenForm2 aboutScreenForm = new AboutScreenForm2();
+            aboutScreenForm.Show();
+        }
     }
 }

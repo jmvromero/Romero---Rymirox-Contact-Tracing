@@ -16,5 +16,24 @@ namespace Romero___Rymirox__Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void buttonLSF2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FillOutForm fillOutForm = new FillOutForm();
+            fillOutForm.ShowDialog();
+        }
+
+        private void buttonCO2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonCO3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StartingScreenForm startingScreenForm = new StartingScreenForm();
+            startingScreenForm.ShowDialog();
+        }
     }
 }

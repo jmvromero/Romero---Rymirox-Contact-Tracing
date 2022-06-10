@@ -107,6 +107,8 @@ namespace Romero___Rymirox__Contact_Tracing
                 }
                 MessageBox.Show("Your contact tracing was successful. Check in your Folder.");
                 this.Hide();
+                ContinueOptions continueOptions = new ContinueOptions();
+                continueOptions.ShowDialog();
             }
 
         }

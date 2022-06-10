@@ -105,6 +105,7 @@
             this.buttonASF2.TabIndex = 24;
             this.buttonASF2.Text = "Next";
             this.buttonASF2.UseVisualStyleBackColor = false;
+            this.buttonASF2.Click += new System.EventHandler(this.buttonASF2_Click);
             // 
             // buttonASF1
             // 
