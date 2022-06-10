@@ -112,5 +112,12 @@ namespace Romero___Rymirox__Contact_Tracing
             }
 
         }
+
+        private void buttonLSF3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StartingScreenForm startingScreenForm = new StartingScreenForm();
+            startingScreenForm.ShowDialog();
+        }
     }
 }

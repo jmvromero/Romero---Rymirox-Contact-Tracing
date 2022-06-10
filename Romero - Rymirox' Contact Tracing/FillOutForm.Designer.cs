@@ -80,6 +80,7 @@
             this.comboBoxFOF4 = new System.Windows.Forms.ComboBox();
             this.labelFOF35 = new System.Windows.Forms.Label();
             this.buttonLSF2 = new System.Windows.Forms.Button();
+            this.buttonLSF3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelFOF1
@@ -608,12 +609,25 @@
             this.buttonLSF2.UseVisualStyleBackColor = false;
             this.buttonLSF2.Click += new System.EventHandler(this.buttonLSF2_Click);
             // 
+            // buttonLSF3
+            // 
+            this.buttonLSF3.BackColor = System.Drawing.Color.White;
+            this.buttonLSF3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonLSF3.Location = new System.Drawing.Point(9, 17);
+            this.buttonLSF3.Name = "buttonLSF3";
+            this.buttonLSF3.Size = new System.Drawing.Size(112, 29);
+            this.buttonLSF3.TabIndex = 62;
+            this.buttonLSF3.Text = "Logout";
+            this.buttonLSF3.UseVisualStyleBackColor = false;
+            this.buttonLSF3.Click += new System.EventHandler(this.buttonLSF3_Click);
+            // 
             // FillOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.Sole__5_;
             this.ClientSize = new System.Drawing.Size(666, 1043);
+            this.Controls.Add(this.buttonLSF3);
             this.Controls.Add(this.buttonLSF2);
             this.Controls.Add(this.labelFOF35);
             this.Controls.Add(this.comboBoxFOF4);
@@ -666,6 +680,7 @@
             this.Controls.Add(this.labelFOF2);
             this.Controls.Add(this.labelFOF1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FillOutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rymirox\' Contact Tracing";
@@ -727,5 +742,6 @@
         private ComboBox comboBoxFOF4;
         private Label labelFOF35;
         private Button buttonLSF2;
+        private Button buttonLSF3;
     }
 }

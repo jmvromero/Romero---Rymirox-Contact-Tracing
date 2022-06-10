@@ -134,7 +134,10 @@
             this.Controls.Add(this.labelASF4_2);
             this.Controls.Add(this.labelASF4_1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AboutScreenForm4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rymirox\' Contact Tracing";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxASF4_1)).EndInit();
             this.ResumeLayout(false);
