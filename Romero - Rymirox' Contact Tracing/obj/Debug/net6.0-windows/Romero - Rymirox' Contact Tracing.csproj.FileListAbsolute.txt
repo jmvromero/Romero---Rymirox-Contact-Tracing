@@ -16,3 +16,5 @@ C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox'
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.LoginScreenForm.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.Properties.Resources.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.StartingScreenForm.resources
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.csproj.AssemblyReference.cache
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.AboutScreenForm.resources
