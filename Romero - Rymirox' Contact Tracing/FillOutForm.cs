@@ -16,5 +16,10 @@ namespace Romero___Rymirox__Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void buttonLSF2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
