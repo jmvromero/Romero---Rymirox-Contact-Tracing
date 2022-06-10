@@ -406,11 +406,11 @@
             this.labelFOF24.AutoSize = true;
             this.labelFOF24.BackColor = System.Drawing.Color.Transparent;
             this.labelFOF24.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.labelFOF24.Location = new System.Drawing.Point(59, 648);
+            this.labelFOF24.Location = new System.Drawing.Point(62, 648);
             this.labelFOF24.Name = "labelFOF24";
-            this.labelFOF24.Size = new System.Drawing.Size(93, 20);
+            this.labelFOF24.Size = new System.Drawing.Size(81, 20);
             this.labelFOF24.TabIndex = 41;
-            this.labelFOF24.Text = "Subdivision";
+            this.labelFOF24.Text = "Barangay";
             // 
             // labelFOF27
             // 

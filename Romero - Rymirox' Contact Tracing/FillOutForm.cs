@@ -83,29 +83,30 @@ namespace Romero___Rymirox__Contact_Tracing
                 StreamWriter streamWriter = new StreamWriter(filePath);
                 using (streamWriter)
                 {
-                    streamWriter.WriteLine(labelFOF3);
-                    streamWriter.WriteLine(labelFOF4);
-                    streamWriter.WriteLine(labelFOF5);
-                    streamWriter.WriteLine(labelFOF6 + ":" + textBoxFOF1.Text);
-                    streamWriter.WriteLine(labelFOF8 + ":" + textBoxFOF2.Text);
-                    streamWriter.WriteLine(labelFOF10 + ":" + textBoxFOF3.Text);
-                    streamWriter.WriteLine(labelFOF12 + ":" + comboBoxFOF1.Text);
-                    streamWriter.WriteLine(labelFOF13 + ":" + textBoxFOF4.Text);
-                    streamWriter.WriteLine(labelFOF14);
-                    streamWriter.WriteLine(labelFOF15 + ":" + textBoxFOF5.Text);
-                    streamWriter.WriteLine(labelFOF16 + ":" + textBoxFOF6.Text);
-                    streamWriter.WriteLine(labelFOF19);
-                    streamWriter.WriteLine(labelFOF20 + ":" + textBoxFOF7.Text);
-                    streamWriter.WriteLine(labelFOF22 + ":" + textBoxFOF8.Text);
-                    streamWriter.WriteLine(labelFOF24 + ":" + textBoxFOF9.Text);
-                    streamWriter.WriteLine(labelFOF26 + ":" + textBoxFOF10.Text);
-                    streamWriter.WriteLine(labelFOF28 + ":" + textBoxFOF11.Text);
-                    streamWriter.WriteLine(labelFOF30);
-                    streamWriter.WriteLine(labelFOF31 + comboBoxFOF2.Text);
-                    streamWriter.WriteLine(labelFOF32 + comboBoxFOF3.Text);
-                    streamWriter.WriteLine(labelFOF33 + comboBoxFOF4.Text);
+                    streamWriter.WriteLine("Rymirox Contact Tracing");
+                    streamWriter.WriteLine("Serving you the best Contact Tracing Form for your safety and security!");
+                    streamWriter.WriteLine("Personal Information");
+                    streamWriter.WriteLine("First Name: " + textBoxFOF1.Text);
+                    streamWriter.WriteLine("Last Name: " + textBoxFOF2.Text);
+                    streamWriter.WriteLine("Middle Name: " + textBoxFOF3.Text);
+                    streamWriter.WriteLine("Gender: " + comboBoxFOF1.Text);
+                    streamWriter.WriteLine("Birthdate: " + textBoxFOF4.Text);
+                    streamWriter.WriteLine("Contact Address");
+                    streamWriter.WriteLine("Contact No.: " + textBoxFOF5.Text);
+                    streamWriter.WriteLine("Email Address: " + textBoxFOF6.Text);
+                    streamWriter.WriteLine("Location Address");
+                    streamWriter.WriteLine("Country: " + textBoxFOF7.Text);
+                    streamWriter.WriteLine("House Number: " + textBoxFOF8.Text);
+                    streamWriter.WriteLine("Barangay: " + textBoxFOF9.Text);
+                    streamWriter.WriteLine("Province: " + textBoxFOF10.Text);
+                    streamWriter.WriteLine("City: " + textBoxFOF11.Text);
+                    streamWriter.WriteLine("Health Check");
+                    streamWriter.WriteLine("Do you have any of the following symptom/s: " + comboBoxFOF2.Text);
+                    streamWriter.WriteLine("Do you have pending COVID-19 Test result?: " + comboBoxFOF3.Text);
+                    streamWriter.WriteLine("Have you been exposed to a sick person or suspect, probable or confirmed COVID-19 case in the past 14 days?: " + comboBoxFOF4.Text);
                 }
-                    MessageBox.Show("Your contact tracing was successful. Check in your Folder.");
+                MessageBox.Show("Your contact tracing was successful. Check in your Folder.");
+                this.Hide();
             }
 
         }

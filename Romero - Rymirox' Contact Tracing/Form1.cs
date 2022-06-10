@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Romero___Rymirox__Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class ContinueOptions : Form
     {
-        public Form1()
+        public ContinueOptions()
         {
             InitializeComponent();
         }
