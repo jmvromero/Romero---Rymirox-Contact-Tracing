@@ -63,7 +63,7 @@
             this.labelFOF24 = new System.Windows.Forms.Label();
             this.labelFOF27 = new System.Windows.Forms.Label();
             this.labelFOF26 = new System.Windows.Forms.Label();
-            this.textFOF7 = new System.Windows.Forms.TextBox();
+            this.textBoxFOF7 = new System.Windows.Forms.TextBox();
             this.textBoxFOF8 = new System.Windows.Forms.TextBox();
             this.textBoxFOF9 = new System.Windows.Forms.TextBox();
             this.textBoxFOF10 = new System.Windows.Forms.TextBox();
@@ -434,12 +434,12 @@
             this.labelFOF26.TabIndex = 43;
             this.labelFOF26.Text = "Province";
             // 
-            // textFOF7
+            // textBoxFOF7
             // 
-            this.textFOF7.Location = new System.Drawing.Point(175, 538);
-            this.textFOF7.Name = "textFOF7";
-            this.textFOF7.Size = new System.Drawing.Size(423, 27);
-            this.textFOF7.TabIndex = 45;
+            this.textBoxFOF7.Location = new System.Drawing.Point(175, 541);
+            this.textBoxFOF7.Name = "textBoxFOF7";
+            this.textBoxFOF7.Size = new System.Drawing.Size(423, 27);
+            this.textBoxFOF7.TabIndex = 45;
             // 
             // textBoxFOF8
             // 
@@ -630,7 +630,7 @@
             this.Controls.Add(this.textBoxFOF10);
             this.Controls.Add(this.textBoxFOF9);
             this.Controls.Add(this.textBoxFOF8);
-            this.Controls.Add(this.textFOF7);
+            this.Controls.Add(this.textBoxFOF7);
             this.Controls.Add(this.labelFOF27);
             this.Controls.Add(this.labelFOF26);
             this.Controls.Add(this.labelFOF25);
@@ -710,7 +710,7 @@
         private Label labelFOF24;
         private Label labelFOF27;
         private Label labelFOF26;
-        private TextBox textFOF7;
+        private TextBox textBoxFOF7;
         private TextBox textBoxFOF8;
         private TextBox textBoxFOF9;
         private TextBox textBoxFOF10;
