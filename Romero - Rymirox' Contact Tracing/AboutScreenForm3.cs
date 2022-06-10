@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Romero___Rymirox__Contact_Tracing
 {
-    public partial class AboutScreenForm2 : Form
+    public partial class AboutScreenForm3 : Form
     {
-        public AboutScreenForm2()
+        public AboutScreenForm3()
         {
             InitializeComponent();
         }
@@ -20,15 +20,15 @@ namespace Romero___Rymirox__Contact_Tracing
         private void buttonASF1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AboutScreenForm aboutScreenForm = new AboutScreenForm();
+            AboutScreenForm2 aboutScreenForm = new AboutScreenForm2();
             aboutScreenForm.Show();
         }
 
         private void buttonASF2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AboutScreenForm3 aboutScreenForm3 = new AboutScreenForm3();
-            aboutScreenForm3.Show();
+            AboutScreenForm4 aboutScreenForm4 = new AboutScreenForm4();
+            aboutScreenForm4.Show();
         }
     }
 }
