@@ -1,8 +1,8 @@
 namespace Romero___Rymirox__Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class StartingScreenForm : Form
     {
-        public Form1()
+        public StartingScreenForm()
         {
             InitializeComponent();
         }
