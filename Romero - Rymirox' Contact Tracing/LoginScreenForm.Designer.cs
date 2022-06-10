@@ -136,6 +136,7 @@
             this.buttonLSF2.TabIndex = 17;
             this.buttonLSF2.Text = "Login";
             this.buttonLSF2.UseVisualStyleBackColor = false;
+            this.buttonLSF2.Click += new System.EventHandler(this.buttonLSF2_Click);
             // 
             // labelLSF7
             // 
@@ -158,6 +159,7 @@
             this.labelLSF8.Size = new System.Drawing.Size(111, 24);
             this.labelLSF8.TabIndex = 19;
             this.labelLSF8.Text = "Register";
+            this.labelLSF8.Click += new System.EventHandler(this.labelLSF8_Click);
             // 
             // labelLSF9
             // 
@@ -202,6 +204,7 @@
             this.buttonLSF1.TabIndex = 23;
             this.buttonLSF1.Text = "Back";
             this.buttonLSF1.UseVisualStyleBackColor = false;
+            this.buttonLSF1.Click += new System.EventHandler(this.buttonLSF1_Click);
             // 
             // LoginScreenForm
             // 

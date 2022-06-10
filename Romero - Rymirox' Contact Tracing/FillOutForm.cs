@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Romero___Rymirox__Contact_Tracing
 {
-    public partial class AboutScreenForm : Form
+    public partial class FillOutForm : Form
     {
-        public AboutScreenForm()
+        public FillOutForm()
         {
             InitializeComponent();
-        }
-
-        private void buttonASF1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            StartingScreenForm startingScreenForm = new StartingScreenForm();   
-            startingScreenForm.Show();
-
         }
     }
 }
