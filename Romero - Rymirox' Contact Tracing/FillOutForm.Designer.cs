@@ -623,6 +623,7 @@
             this.buttonLSF3.TabIndex = 62;
             this.buttonLSF3.Text = "Logout";
             this.buttonLSF3.UseVisualStyleBackColor = false;
+            this.buttonLSF3.Click += new System.EventHandler(this.buttonLSF3_Click);
             // 
             // datelabel1
             // 

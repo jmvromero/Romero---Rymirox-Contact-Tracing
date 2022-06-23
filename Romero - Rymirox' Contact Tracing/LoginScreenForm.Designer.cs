@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginScreenForm));
             this.labelLSF3 = new System.Windows.Forms.Label();
-            this.labelLSF1 = new System.Windows.Forms.Label();
             this.labelLSF2 = new System.Windows.Forms.Label();
             this.labelLSF4 = new System.Windows.Forms.Label();
             this.textBoxLSF1 = new System.Windows.Forms.TextBox();
@@ -44,6 +43,7 @@
             this.labelLSF11 = new System.Windows.Forms.Label();
             this.labelLSF10 = new System.Windows.Forms.Label();
             this.buttonLSF1 = new System.Windows.Forms.Button();
+            this.labelLSF1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelLSF3
@@ -56,17 +56,6 @@
             this.labelLSF3.Size = new System.Drawing.Size(375, 33);
             this.labelLSF3.TabIndex = 9;
             this.labelLSF3.Text = "Rymirox\' Contact Tracing";
-            // 
-            // labelLSF1
-            // 
-            this.labelLSF1.AutoSize = true;
-            this.labelLSF1.BackColor = System.Drawing.Color.Transparent;
-            this.labelLSF1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.labelLSF1.Location = new System.Drawing.Point(244, 20);
-            this.labelLSF1.Name = "labelLSF1";
-            this.labelLSF1.Size = new System.Drawing.Size(206, 20);
-            this.labelLSF1.TabIndex = 10;
-            this.labelLSF1.Text = "Welcome to Login Screen!";
             // 
             // labelLSF2
             // 
@@ -206,6 +195,17 @@
             this.buttonLSF1.UseVisualStyleBackColor = false;
             this.buttonLSF1.Click += new System.EventHandler(this.buttonLSF1_Click);
             // 
+            // labelLSF1
+            // 
+            this.labelLSF1.AutoSize = true;
+            this.labelLSF1.BackColor = System.Drawing.Color.Transparent;
+            this.labelLSF1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.labelLSF1.Location = new System.Drawing.Point(244, 20);
+            this.labelLSF1.Name = "labelLSF1";
+            this.labelLSF1.Size = new System.Drawing.Size(206, 20);
+            this.labelLSF1.TabIndex = 10;
+            this.labelLSF1.Text = "Welcome to Login Screen!";
+            // 
             // LoginScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -256,7 +256,6 @@
         private Label label11;
         private Button button2;
         private Label labelLSF3;
-        private Label labelLSF1;
         private Label labelLSF2;
         private Label labelLSF4;
         private Label labelLSF5;
@@ -270,5 +269,6 @@
         private Label labelLSF11;
         private Label labelLSF10;
         private Button buttonLSF1;
+        private Label labelLSF1;
     }
 }

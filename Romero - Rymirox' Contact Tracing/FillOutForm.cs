@@ -21,6 +21,7 @@ namespace Romero___Rymirox__Contact_Tracing
         private void buttonLSF2_Click(object sender, EventArgs e)
         {
             fileWriter();
+            newFile();
             
 
 
@@ -78,7 +79,7 @@ namespace Romero___Rymirox__Contact_Tracing
             }
             else
             {
-                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text  + datelabel1.Text + ".txt";
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text + "-" + datelabel1.Text + ".txt";
                 StreamWriter streamWriter = new StreamWriter(filePath);
                 using (streamWriter)
                 {
@@ -112,7 +113,7 @@ namespace Romero___Rymirox__Contact_Tracing
                 continueOptions.ShowDialog();
 
             }
-        }
+    }
 
         private void FillOutForm_Load(object sender, EventArgs e)
         {
@@ -127,5 +128,47 @@ namespace Romero___Rymirox__Contact_Tracing
             timelabel1.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
+
+        private void buttonLSF3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginScreenForm loginScreenForm = new LoginScreenForm();
+            loginScreenForm.ShowDialog();
+
+        }
+        
+        private void newFile()
+        {
+            string filePath = @"C:\Users\Romero\Desktop\Rymirox Contact Tracing\ContactTracing.txt";
+            StreamWriter streamWriter = new StreamWriter(filePath);
+            using (streamWriter)
+            {
+                streamWriter.WriteLine(datelabel1.Text);
+                streamWriter.WriteLine("Rymirox Contact Tracing");
+                streamWriter.WriteLine("Serving you the best Contact Tracing Form for your safety and security!");
+                streamWriter.WriteLine("Personal Information");
+                streamWriter.WriteLine("First Name: " + textBoxFOF1.Text);
+                streamWriter.WriteLine("Last Name: " + textBoxFOF2.Text);
+                streamWriter.WriteLine("Middle Name: " + textBoxFOF3.Text);
+                streamWriter.WriteLine("Gender: " + comboBoxFOF1.Text);
+                streamWriter.WriteLine("Birthdate: " + textBoxFOF4.Text);
+                streamWriter.WriteLine("Contact Address");
+                streamWriter.WriteLine("Contact No.: " + textBoxFOF5.Text);
+                streamWriter.WriteLine("Email Address: " + textBoxFOF6.Text);
+                streamWriter.WriteLine("Location Address");
+                streamWriter.WriteLine("Country: " + textBoxFOF7.Text);
+                streamWriter.WriteLine("House Number: " + textBoxFOF8.Text);
+                streamWriter.WriteLine("Barangay: " + textBoxFOF9.Text);
+                streamWriter.WriteLine("Province: " + textBoxFOF10.Text);
+                streamWriter.WriteLine("City: " + textBoxFOF11.Text);
+                streamWriter.WriteLine("Health Check");
+                streamWriter.WriteLine("Do you have any of the following symptom/s: " + comboBoxFOF2.Text);
+                streamWriter.WriteLine("Do you have pending COVID-19 Test result?: " + comboBoxFOF3.Text);
+                streamWriter.WriteLine("Have you been exposed to a sick person or suspect, probable or confirmed COVID-19 case in the past 14 days?: " + comboBoxFOF4.Text);
+            }
+        }
+
+
+
     }
 }

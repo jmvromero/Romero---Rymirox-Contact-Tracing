@@ -36,6 +36,7 @@
             this.buttonSSM3 = new System.Windows.Forms.Button();
             this.labelSSM3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.datelabelSSF1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelSSM2
@@ -117,6 +118,16 @@
             this.label1.Text = "Want to find your Record? Click here!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // datelabelSSF1
+            // 
+            this.datelabelSSF1.AutoSize = true;
+            this.datelabelSSF1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.datelabelSSF1.Location = new System.Drawing.Point(268, 47);
+            this.datelabelSSF1.Name = "datelabelSSF1";
+            this.datelabelSSF1.Size = new System.Drawing.Size(39, 17);
+            this.datelabelSSF1.TabIndex = 65;
+            this.datelabelSSF1.Text = "Date";
+            // 
             // StartingScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -124,6 +135,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.Sole__5_;
             this.ClientSize = new System.Drawing.Size(701, 371);
+            this.Controls.Add(this.datelabelSSF1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelSSM3);
             this.Controls.Add(this.buttonSSM3);
@@ -138,6 +150,7 @@
             this.Name = "StartingScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rymirox\' Contact Tracing";
+            this.Load += new System.EventHandler(this.StartingScreenForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +165,6 @@
         private Button buttonSSM3;
         private Label labelSSM3;
         private Label label1;
+        private Label datelabelSSF1;
     }
 }

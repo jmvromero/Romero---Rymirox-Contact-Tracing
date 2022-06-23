@@ -32,5 +32,10 @@ namespace Romero___Rymirox__Contact_Tracing
             ListingForm listingForm = new ListingForm();
             listingForm.ShowDialog();
         }
+
+        private void StartingScreenForm_Load(object sender, EventArgs e)
+        {
+            datelabelSSF1.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }
