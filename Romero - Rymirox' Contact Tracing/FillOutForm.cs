@@ -20,42 +20,41 @@ namespace Romero___Rymirox__Contact_Tracing
 
         private void buttonLSF2_Click(object sender, EventArgs e)
         {
+            fileWriter();
+            
 
-            //try
-            //{
-            //    string filePath = @"C:\Users\Romero\Desktop"+"\\Rymirox Contact Tracing\\"+textBoxFOF2.Text+".txt";
-            //    StreamWriter streamWriter = new StreamWriter(filePath);
-            //    using (streamWriter)
-            //    {
-            //        streamWriter.WriteLine(labelFOF3);
-            //        streamWriter.WriteLine(labelFOF4);
-            //        streamWriter.WriteLine(labelFOF5);
-            //        streamWriter.WriteLine(labelFOF6 +":" + textBoxFOF1.Text);
-            //        streamWriter.WriteLine(labelFOF8 +":" + textBoxFOF2.Text);
-            //        streamWriter.WriteLine(labelFOF10 +":" + textBoxFOF3.Text);
-            //        streamWriter.WriteLine(labelFOF12 +":" + comboBoxFOF1.Text);
-            //        streamWriter.WriteLine(labelFOF13 +":" + textBoxFOF4.Text);
-            //        streamWriter.WriteLine(labelFOF14);
-            //        streamWriter.WriteLine(labelFOF15 +":" + textBoxFOF5.Text);
-            //        streamWriter.WriteLine(labelFOF16 +":" + textBoxFOF6.Text);
-            //        streamWriter.WriteLine(labelFOF19);
-            //        streamWriter.WriteLine(labelFOF20 +":" + textBoxFOF7.Text);
-            //        streamWriter.WriteLine(labelFOF22 +":" + textBoxFOF8.Text);
-            //        streamWriter.WriteLine(labelFOF24 +":" + textBoxFOF9.Text);
-            //        streamWriter.WriteLine(labelFOF26 +":" + textBoxFOF10.Text);
-            //        streamWriter.WriteLine(labelFOF28 +":" + textBoxFOF11.Text);
-            //        streamWriter.WriteLine(labelFOF30);
-            //        streamWriter.WriteLine(labelFOF31 + comboBoxFOF2.Text);
-            //        streamWriter.WriteLine(labelFOF32 + comboBoxFOF3.Text);
-            //        streamWriter.WriteLine(labelFOF33 + comboBoxFOF4.Text); 
-            //    }
-            //}
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Error");
-            //    MessageBox.Show("Please Try Again");
-            //}
 
+            //string filePath1 = @"C:\Users\Romero\Desktop\Rymirox Contact Tracing\Records.txt";
+            //StreamWriter file = new StreamWriter(filePath1);
+            //using (file)
+            //{
+            //    file.WriteLine(datelabel1.Text);
+            //    file.WriteLine("Rymirox Contact Tracing");
+            //    file.WriteLine("Serving you the best Contact Tracing Form for your safety and security!");
+            //    file.WriteLine("Personal Information");
+            //    file.WriteLine("First Name: " + textBoxFOF1.Text);
+            //    file.WriteLine("Last Name: " + textBoxFOF2.Text);
+            //    file.WriteLine("Middle Name: " + textBoxFOF3.Text);
+            //    file.WriteLine("Gender: " + comboBoxFOF1.Text);
+            //    file.WriteLine("Birthdate: " + textBoxFOF4.Text);
+            //    file.WriteLine("Contact Address");
+            //    file.WriteLine("Contact No.: " + textBoxFOF5.Text);
+            //    file.WriteLine("Email Address: " + textBoxFOF6.Text);
+            //    file.WriteLine("Location Address");
+            //    file.WriteLine("Country: " + textBoxFOF7.Text);
+            //    file.WriteLine("House Number: " + textBoxFOF8.Text);
+            //    file.WriteLine("Barangay: " + textBoxFOF9.Text);
+            //    file.WriteLine("Province: " + textBoxFOF10.Text);
+            //    file.WriteLine("City: " + textBoxFOF11.Text);
+            //    file.WriteLine("Health Check");
+            //    file.WriteLine("Do you have any of the following symptom/s: " + comboBoxFOF2.Text);
+            //    file.WriteLine("Do you have pending COVID-19 Test result?: " + comboBoxFOF3.Text);
+            //    file.WriteLine("Have you been exposed to a sick person or suspect, probable or confirmed COVID-19 case in the past 14 days?: " + comboBoxFOF4.Text);
+            //}
+        }
+
+        private void fileWriter()
+        {
             string input1 = textBoxFOF1.Text;
             string input2 = textBoxFOF2.Text;
             string input3 = textBoxFOF3.Text;
@@ -72,17 +71,18 @@ namespace Romero___Rymirox__Contact_Tracing
             string input14 = comboBoxFOF3.Text;
             string input15 = comboBoxFOF4.Text;
 
-            bool BlankInfo = input1 == "" || input2 == "";
+            bool BlankInfo = (input1 == "" || input2 == "") || (input3 == "" || input4 == "") || (input5 == "" || input6 == "") || (input7 == "" || input8 == "") || (input9 == "" || input10 == "") || (input11 == "" || input12 == "") || (input13 == "" || input14 == "") || (input15 == "" || input14 == "");
             if (BlankInfo)
             {
                 MessageBox.Show("Please Try Again");
             }
             else
             {
-                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text + ".txt";
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text  + datelabel1.Text + ".txt";
                 StreamWriter streamWriter = new StreamWriter(filePath);
                 using (streamWriter)
                 {
+                    streamWriter.WriteLine(datelabel1.Text);
                     streamWriter.WriteLine("Rymirox Contact Tracing");
                     streamWriter.WriteLine("Serving you the best Contact Tracing Form for your safety and security!");
                     streamWriter.WriteLine("Personal Information");
@@ -105,19 +105,27 @@ namespace Romero___Rymirox__Contact_Tracing
                     streamWriter.WriteLine("Do you have pending COVID-19 Test result?: " + comboBoxFOF3.Text);
                     streamWriter.WriteLine("Have you been exposed to a sick person or suspect, probable or confirmed COVID-19 case in the past 14 days?: " + comboBoxFOF4.Text);
                 }
+
                 MessageBox.Show("Your contact tracing was successful. Check in your Folder.");
                 this.Hide();
                 ContinueOptions continueOptions = new ContinueOptions();
                 continueOptions.ShowDialog();
+
             }
+        }
+
+        private void FillOutForm_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            datelabel1.Text = DateTime.Now.ToLongDateString();
+            timelabel1.Text = DateTime.Now.ToLongTimeString();
 
         }
 
-        private void buttonLSF3_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Hide();
-            StartingScreenForm startingScreenForm = new StartingScreenForm();
-            startingScreenForm.ShowDialog();
+            timelabel1.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
         }
     }
 }

@@ -25,5 +25,12 @@ namespace Romero___Rymirox__Contact_Tracing
         {
             Application.Exit();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListingForm listingForm = new ListingForm();
+            listingForm.ShowDialog();
+        }
     }
 }

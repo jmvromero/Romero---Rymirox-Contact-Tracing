@@ -35,6 +35,7 @@
             this.buttonSSM2 = new System.Windows.Forms.Button();
             this.buttonSSM3 = new System.Windows.Forms.Button();
             this.labelSSM3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelSSM2
@@ -63,7 +64,7 @@
             // 
             this.buttonSSM1.BackColor = System.Drawing.Color.White;
             this.buttonSSM1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSSM1.Location = new System.Drawing.Point(290, 162);
+            this.buttonSSM1.Location = new System.Drawing.Point(290, 153);
             this.buttonSSM1.Name = "buttonSSM1";
             this.buttonSSM1.Size = new System.Drawing.Size(105, 56);
             this.buttonSSM1.TabIndex = 2;
@@ -74,7 +75,7 @@
             // buttonSSM2
             // 
             this.buttonSSM2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSSM2.Location = new System.Drawing.Point(290, 224);
+            this.buttonSSM2.Location = new System.Drawing.Point(290, 215);
             this.buttonSSM2.Name = "buttonSSM2";
             this.buttonSSM2.Size = new System.Drawing.Size(105, 56);
             this.buttonSSM2.TabIndex = 3;
@@ -85,7 +86,7 @@
             // buttonSSM3
             // 
             this.buttonSSM3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSSM3.Location = new System.Drawing.Point(290, 286);
+            this.buttonSSM3.Location = new System.Drawing.Point(290, 277);
             this.buttonSSM3.Name = "buttonSSM3";
             this.buttonSSM3.Size = new System.Drawing.Size(105, 56);
             this.buttonSSM3.TabIndex = 4;
@@ -104,6 +105,18 @@
             this.labelSSM3.TabIndex = 5;
             this.labelSSM3.Text = "Serving you the best Contact Tracing Form for your safety and security!";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(202, 342);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(290, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Want to find your Record? Click here!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // StartingScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -111,6 +124,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.Sole__5_;
             this.ClientSize = new System.Drawing.Size(701, 371);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelSSM3);
             this.Controls.Add(this.buttonSSM3);
             this.Controls.Add(this.buttonSSM2);
@@ -137,5 +151,6 @@
         private Button buttonSSM2;
         private Button buttonSSM3;
         private Label labelSSM3;
+        private Label label1;
     }
 }
