@@ -79,7 +79,7 @@ namespace Romero___Rymirox__Contact_Tracing
             }
             else
             {
-                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text + "-" + datetextBox1.Text + ".txt";
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text + datetextBox1.Text + ".txt";
                 StreamWriter streamWriter = new StreamWriter(filePath);
                 using (streamWriter)
                 {

@@ -50,9 +50,10 @@ namespace Romero___Rymirox__Contact_Tracing
         {
 
             string input3 = dateTimePicker1.Text;
+            string input4 = textBoxLF1.Text;
 
             bool datejune23 = true;
-            if (datejune23 = input3 == "Thursday, June 23, 2022") 
+            if (datejune23 = input3 == "Thursday, June 23, 2022")
             {
                 const int SIZE = 22;
                 string[] numbers = new string[SIZE];
@@ -73,8 +74,11 @@ namespace Romero___Rymirox__Contact_Tracing
                 {
                     recordlistbox1.Items.Add(value);
                 }
-                
 
+            }
+            else if (input4 == "" || input3 == "" && input3 == "Friday, June 24, 2022" && input3 == "Thursday, June 23, 2022" && input3 == "Saturday, June 25, 2022")
+            {
+                MessageBox.Show("Try Again");
             }
             else if (datejune23 = input3 == "Friday, June 24, 2022")
             {
@@ -98,7 +102,7 @@ namespace Romero___Rymirox__Contact_Tracing
                     recordlistbox1.Items.Add(value);
                 }
             }
-            else if (datejune23 = input3 == "Saturday, June 25, 2022") 
+            else if (datejune23 = input3 == "Saturday, June 25, 2022")
             {
                 const int SIZE = 22;
                 string[] numbers = new string[SIZE];
@@ -120,6 +124,7 @@ namespace Romero___Rymirox__Contact_Tracing
                     recordlistbox1.Items.Add(value);
                 }
             }
+            
             else
             {
                 MessageBox.Show("Do not have record");
