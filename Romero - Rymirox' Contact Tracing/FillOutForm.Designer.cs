@@ -85,6 +85,8 @@
             this.datelabel1 = new System.Windows.Forms.Label();
             this.timelabel1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.datetextBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelFOF1
@@ -650,6 +652,23 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // datetextBox1
+            // 
+            this.datetextBox1.Location = new System.Drawing.Point(448, 147);
+            this.datetextBox1.Name = "datetextBox1";
+            this.datetextBox1.Size = new System.Drawing.Size(198, 27);
+            this.datetextBox1.TabIndex = 66;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(400, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 20);
+            this.label1.TabIndex = 67;
+            this.label1.Text = "Date";
+            // 
             // FillOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -658,6 +677,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.Sole__5_;
             this.ClientSize = new System.Drawing.Size(772, 1043);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.datetextBox1);
             this.Controls.Add(this.timelabel1);
             this.Controls.Add(this.datelabel1);
             this.Controls.Add(this.buttonLSF3);
@@ -779,5 +800,8 @@
         private Label datelabel1;
         private Label timelabel1;
         private System.Windows.Forms.Timer timer1;
+        private TextBox textBox1;
+        private TextBox datetextBox1;
+        private Label label1;
     }
 }

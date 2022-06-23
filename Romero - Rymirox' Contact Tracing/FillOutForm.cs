@@ -79,7 +79,7 @@ namespace Romero___Rymirox__Contact_Tracing
             }
             else
             {
-                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text + "-" + datelabel1.Text + ".txt";
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxFOF2.Text + "-" + datetextBox1.Text + ".txt";
                 StreamWriter streamWriter = new StreamWriter(filePath);
                 using (streamWriter)
                 {
@@ -139,34 +139,36 @@ namespace Romero___Rymirox__Contact_Tracing
         
         private void newFile()
         {
-            string filePath = @"C:\Users\Romero\Desktop\Rymirox Contact Tracing\ContactTracing.txt";
-            StreamWriter streamWriter = new StreamWriter(filePath);
-            using (streamWriter)
+            string input1 = datetextBox1.Text;
+            bool june23date = true;
+            if (june23date = input1 == "Thursday, June 23, 2022")
             {
-                streamWriter.WriteLine(datelabel1.Text);
-                streamWriter.WriteLine("Rymirox Contact Tracing");
-                streamWriter.WriteLine("Serving you the best Contact Tracing Form for your safety and security!");
-                streamWriter.WriteLine("Personal Information");
-                streamWriter.WriteLine("First Name: " + textBoxFOF1.Text);
-                streamWriter.WriteLine("Last Name: " + textBoxFOF2.Text);
-                streamWriter.WriteLine("Middle Name: " + textBoxFOF3.Text);
-                streamWriter.WriteLine("Gender: " + comboBoxFOF1.Text);
-                streamWriter.WriteLine("Birthdate: " + textBoxFOF4.Text);
-                streamWriter.WriteLine("Contact Address");
-                streamWriter.WriteLine("Contact No.: " + textBoxFOF5.Text);
-                streamWriter.WriteLine("Email Address: " + textBoxFOF6.Text);
-                streamWriter.WriteLine("Location Address");
-                streamWriter.WriteLine("Country: " + textBoxFOF7.Text);
-                streamWriter.WriteLine("House Number: " + textBoxFOF8.Text);
-                streamWriter.WriteLine("Barangay: " + textBoxFOF9.Text);
-                streamWriter.WriteLine("Province: " + textBoxFOF10.Text);
-                streamWriter.WriteLine("City: " + textBoxFOF11.Text);
-                streamWriter.WriteLine("Health Check");
-                streamWriter.WriteLine("Do you have any of the following symptom/s: " + comboBoxFOF2.Text);
-                streamWriter.WriteLine("Do you have pending COVID-19 Test result?: " + comboBoxFOF3.Text);
-                streamWriter.WriteLine("Have you been exposed to a sick person or suspect, probable or confirmed COVID-19 case in the past 14 days?: " + comboBoxFOF4.Text);
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + datetextBox1.Text + ".txt";
+                StreamWriter str = new StreamWriter(filePath);
+                using (str)
+                {
+                    str.WriteLine(datelabel1.Text + " " + textBoxFOF2);
+                }
             }
-        }
+            else if (june23date = input1 == "Friday, June 24, 2022")
+            {
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + datetextBox1.Text + ".txt";
+                StreamWriter streamWriter = new StreamWriter(filePath);
+                using (streamWriter)
+                {
+                    streamWriter.WriteLine(datelabel1.Text + " " + textBoxFOF2);
+                }
+            }
+            else if (june23date = input1 == "Saturday, June 25, 2022")
+            {
+                string filePath = @"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + datetextBox1.Text + ".txt";
+                StreamWriter streamWriter = new StreamWriter(filePath);
+                using (streamWriter)
+                {
+                    streamWriter.WriteLine(datelabel1.Text + " " + textBoxFOF2);
+                }
+            }
+        }   
 
 
 

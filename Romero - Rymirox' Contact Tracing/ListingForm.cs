@@ -39,7 +39,6 @@ namespace Romero___Rymirox__Contact_Tracing
 
                 MessageBox.Show(all);
                 
-
                 reader.Close();
             }
 
@@ -52,29 +51,82 @@ namespace Romero___Rymirox__Contact_Tracing
 
             string input3 = dateTimePicker1.Text;
 
-           
-            
-            
-            
-            const int SIZE = 22;
-            string[] numbers = new string[SIZE];
-            int index = 0;
-
-            StreamReader inputFile;
-            inputFile = File.OpenText(@"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + "ContactTracing.txt");
-
-            while (index < numbers.Length && !inputFile.EndOfStream)
+            bool datejune23 = true;
+            if (datejune23 = input3 == "Thursday, June 23, 2022") 
             {
+                const int SIZE = 22;
+                string[] numbers = new string[SIZE];
+                int index = 0;
+
+                StreamReader inputFile;
+                inputFile = File.OpenText(@"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxLF1.Text + dateTimePicker1.Text + ".txt");
+
+                while (index < numbers.Length && !inputFile.EndOfStream)
+                {
 #pragma warning disable CS8601 // Possible null reference assignment.
-                numbers[index] = inputFile.ReadLine();
+                    numbers[index] = inputFile.ReadLine();
 #pragma warning restore CS8601 // Possible null reference assignment.
-                index++;
+                    index++;
+                }
+                inputFile.Close();
+                foreach (string value in numbers)
+                {
+                    recordlistbox1.Items.Add(value);
+                }
+                
+
             }
-            inputFile.Close();
-            foreach (string value in numbers)
+            else if (datejune23 = input3 == "Friday, June 24, 2022")
             {
-                recordlistbox1.Items.Add(value);
+                const int SIZE = 22;
+                string[] numbers = new string[SIZE];
+                int index = 0;
+
+                StreamReader inputFile;
+                inputFile = File.OpenText(@"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxLF1.Text + dateTimePicker1.Text + ".txt");
+
+                while (index < numbers.Length && !inputFile.EndOfStream)
+                {
+#pragma warning disable CS8601 // Possible null reference assignment.
+                    numbers[index] = inputFile.ReadLine();
+#pragma warning restore CS8601 // Possible null reference assignment.
+                    index++;
+                }
+                inputFile.Close();
+                foreach (string value in numbers)
+                {
+                    recordlistbox1.Items.Add(value);
+                }
             }
+            else if (datejune23 = input3 == "Saturday, June 25, 2022") 
+            {
+                const int SIZE = 22;
+                string[] numbers = new string[SIZE];
+                int index = 0;
+
+                StreamReader inputFile;
+                inputFile = File.OpenText(@"C:\Users\Romero\Desktop" + "\\Rymirox Contact Tracing\\" + textBoxLF1.Text + dateTimePicker1.Text + ".txt");
+
+                while (index < numbers.Length && !inputFile.EndOfStream)
+                {
+#pragma warning disable CS8601 // Possible null reference assignment.
+                    numbers[index] = inputFile.ReadLine();
+#pragma warning restore CS8601 // Possible null reference assignment.
+                    index++;
+                }
+                inputFile.Close();
+                foreach (string value in numbers)
+                {
+                    recordlistbox1.Items.Add(value);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Do not have record");
+            }
+
+
+
 
         }
 
