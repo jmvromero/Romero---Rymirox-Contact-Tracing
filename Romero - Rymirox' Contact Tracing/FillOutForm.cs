@@ -83,7 +83,7 @@ namespace Romero___Rymirox__Contact_Tracing
                 StreamWriter streamWriter = new StreamWriter(filePath);
                 using (streamWriter)
                 {
-                    streamWriter.WriteLine(datelabel1.Text);
+                    streamWriter.WriteLine(datetextBox1.Text);
                     streamWriter.WriteLine("Rymirox Contact Tracing");
                     streamWriter.WriteLine("Serving you the best Contact Tracing Form for your safety and security!");
                     streamWriter.WriteLine("Personal Information");
