@@ -220,7 +220,7 @@ namespace Romero___Rymirox__Contact_Tracing
             {
                 pictureBoxFOF1.SizeMode = PictureBoxSizeMode.StretchImage;
                 Zen.Barcode.CodeQrBarcodeDraw qrBarcodeDraw = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                pictureBoxFOF1.Image = qrBarcodeDraw.Draw(datetextBox1.Text + " " + "Rymirox Contact Tracing" + " " + "First Name: " + textBoxFOF1.Text + " " + "Last Name: " + textBoxFOF2.Text + " " + "Middle Name: " + textBoxFOF3.Text + " " + "Gender: " + comboBoxFOF1.Text + " " + "Birthdate: " + textBoxFOF4.Text, Height);
+                pictureBoxFOF1.Image = qrBarcodeDraw.Draw(datetextBox1.Text + " " + "Rymirox Contact Tracing" + " " + "Personal Information" + " " + "First Name: " + textBoxFOF1.Text + " " + "Last Name: " + textBoxFOF2.Text + " " + "Middle Name: " + textBoxFOF3.Text + " " + "Gender: " + comboBoxFOF1.Text + " " + "Birthdate: " + textBoxFOF4.Text, Height);
 
 
             }
