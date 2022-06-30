@@ -87,6 +87,12 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.datetextBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxFOF1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.saveButtonFOF1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.qrcodebuttonFOF1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFOF1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelFOF1
@@ -94,7 +100,7 @@
             this.labelFOF1.AutoSize = true;
             this.labelFOF1.BackColor = System.Drawing.Color.Transparent;
             this.labelFOF1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.labelFOF1.Location = new System.Drawing.Point(252, 18);
+            this.labelFOF1.Location = new System.Drawing.Point(507, 19);
             this.labelFOF1.Name = "labelFOF1";
             this.labelFOF1.Size = new System.Drawing.Size(261, 20);
             this.labelFOF1.TabIndex = 11;
@@ -105,7 +111,7 @@
             this.labelFOF2.AutoSize = true;
             this.labelFOF2.BackColor = System.Drawing.Color.Transparent;
             this.labelFOF2.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.labelFOF2.Location = new System.Drawing.Point(183, 38);
+            this.labelFOF2.Location = new System.Drawing.Point(438, 39);
             this.labelFOF2.Name = "labelFOF2";
             this.labelFOF2.Size = new System.Drawing.Size(398, 20);
             this.labelFOF2.TabIndex = 12;
@@ -116,7 +122,7 @@
             this.labelFOF3.AutoSize = true;
             this.labelFOF3.BackColor = System.Drawing.Color.Transparent;
             this.labelFOF3.Font = new System.Drawing.Font("Rockwell", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelFOF3.Location = new System.Drawing.Point(193, 78);
+            this.labelFOF3.Location = new System.Drawing.Point(448, 79);
             this.labelFOF3.Name = "labelFOF3";
             this.labelFOF3.Size = new System.Drawing.Size(375, 33);
             this.labelFOF3.TabIndex = 13;
@@ -127,7 +133,7 @@
             this.labelFOF4.AutoSize = true;
             this.labelFOF4.BackColor = System.Drawing.Color.Transparent;
             this.labelFOF4.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.labelFOF4.Location = new System.Drawing.Point(107, 111);
+            this.labelFOF4.Location = new System.Drawing.Point(362, 112);
             this.labelFOF4.Name = "labelFOF4";
             this.labelFOF4.Size = new System.Drawing.Size(539, 20);
             this.labelFOF4.TabIndex = 14;
@@ -611,7 +617,7 @@
             this.buttonLSF2.Name = "buttonLSF2";
             this.buttonLSF2.Size = new System.Drawing.Size(112, 29);
             this.buttonLSF2.TabIndex = 61;
-            this.buttonLSF2.Text = "Confirm";
+            this.buttonLSF2.Text = "Text File";
             this.buttonLSF2.UseVisualStyleBackColor = false;
             this.buttonLSF2.Click += new System.EventHandler(this.buttonLSF2_Click);
             // 
@@ -631,7 +637,7 @@
             // 
             this.datelabel1.AutoSize = true;
             this.datelabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.datelabel1.Location = new System.Drawing.Point(594, 18);
+            this.datelabel1.Location = new System.Drawing.Point(1025, 19);
             this.datelabel1.Name = "datelabel1";
             this.datelabel1.Size = new System.Drawing.Size(42, 20);
             this.datelabel1.TabIndex = 63;
@@ -641,7 +647,7 @@
             // 
             this.timelabel1.AutoSize = true;
             this.timelabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.timelabel1.Location = new System.Drawing.Point(682, 38);
+            this.timelabel1.Location = new System.Drawing.Point(1085, 39);
             this.timelabel1.Name = "timelabel1";
             this.timelabel1.Size = new System.Drawing.Size(42, 20);
             this.timelabel1.TabIndex = 64;
@@ -669,6 +675,60 @@
             this.label1.TabIndex = 67;
             this.label1.Text = "Date";
             // 
+            // pictureBoxFOF1
+            // 
+            this.pictureBoxFOF1.Location = new System.Drawing.Point(742, 306);
+            this.pictureBoxFOF1.Name = "pictureBoxFOF1";
+            this.pictureBoxFOF1.Size = new System.Drawing.Size(412, 424);
+            this.pictureBoxFOF1.TabIndex = 68;
+            this.pictureBoxFOF1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Rockwell Extra Bold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(849, 242);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(204, 20);
+            this.label2.TabIndex = 69;
+            this.label2.Text = "QR Code Generator";
+            // 
+            // saveButtonFOF1
+            // 
+            this.saveButtonFOF1.BackColor = System.Drawing.Color.White;
+            this.saveButtonFOF1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.saveButtonFOF1.Location = new System.Drawing.Point(899, 764);
+            this.saveButtonFOF1.Name = "saveButtonFOF1";
+            this.saveButtonFOF1.Size = new System.Drawing.Size(112, 29);
+            this.saveButtonFOF1.TabIndex = 70;
+            this.saveButtonFOF1.Text = "Save";
+            this.saveButtonFOF1.UseVisualStyleBackColor = false;
+            this.saveButtonFOF1.Click += new System.EventHandler(this.saveButtonFOF1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(763, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(377, 20);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "This QR Code will cover up all of your information";
+            // 
+            // qrcodebuttonFOF1
+            // 
+            this.qrcodebuttonFOF1.BackColor = System.Drawing.Color.White;
+            this.qrcodebuttonFOF1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.qrcodebuttonFOF1.Location = new System.Drawing.Point(400, 989);
+            this.qrcodebuttonFOF1.Name = "qrcodebuttonFOF1";
+            this.qrcodebuttonFOF1.Size = new System.Drawing.Size(112, 29);
+            this.qrcodebuttonFOF1.TabIndex = 72;
+            this.qrcodebuttonFOF1.Text = "QR Code";
+            this.qrcodebuttonFOF1.UseVisualStyleBackColor = false;
+            this.qrcodebuttonFOF1.Click += new System.EventHandler(this.qrcodebuttonFOF1_Click);
+            // 
             // FillOutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -676,7 +736,12 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.Sole__5_;
-            this.ClientSize = new System.Drawing.Size(772, 1043);
+            this.ClientSize = new System.Drawing.Size(1244, 1043);
+            this.Controls.Add(this.qrcodebuttonFOF1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.saveButtonFOF1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBoxFOF1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.datetextBox1);
             this.Controls.Add(this.timelabel1);
@@ -738,6 +803,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rymirox\' Contact Tracing";
             this.Load += new System.EventHandler(this.FillOutForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFOF1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -803,5 +869,10 @@
         private TextBox textBox1;
         private TextBox datetextBox1;
         private Label label1;
+        private PictureBox pictureBoxFOF1;
+        private Label label2;
+        private Button saveButtonFOF1;
+        private Label label3;
+        private Button qrcodebuttonFOF1;
     }
 }

@@ -45,6 +45,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelLF3
@@ -210,6 +212,28 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(89, 313);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(227, 16);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "Format: Day, Month Day, Year (Word)";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(621, 271);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(227, 16);
+            this.label5.TabIndex = 74;
+            this.label5.Text = "Format: Day, Month Day, Year (Word)";
+            // 
             // ListingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -217,6 +241,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.output_onlinepngtools;
             this.ClientSize = new System.Drawing.Size(1001, 1055);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
@@ -259,5 +285,7 @@
         private Button button2;
         private Label label3;
         private Button button3;
+        private Label label4;
+        private Label label5;
     }
 }

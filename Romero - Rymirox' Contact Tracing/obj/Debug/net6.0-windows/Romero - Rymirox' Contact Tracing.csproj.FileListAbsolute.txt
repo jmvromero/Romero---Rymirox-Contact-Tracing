@@ -25,3 +25,5 @@ C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox'
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.AboutScreenForm3.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.AboutScreenForm4.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.ListingForm.resources
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\Zen.Barcode.Core.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.csproj.CopyComplete
