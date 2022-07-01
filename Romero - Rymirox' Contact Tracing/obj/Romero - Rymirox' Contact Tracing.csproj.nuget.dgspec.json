@@ -40,9 +40,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "Zen.Barcode.Rendering.Framework": {
+            "QRCoder": {
               "target": "Package",
-              "version": "[3.1.10729.1, )"
+              "version": "[1.4.3, )"
             }
           },
           "imports": [

@@ -92,6 +92,7 @@
             this.saveButtonFOF1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.qrcodebuttonFOF1 = new System.Windows.Forms.Button();
+            this.newformbutton1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFOF1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -613,7 +614,7 @@
             // 
             this.buttonLSF2.BackColor = System.Drawing.Color.White;
             this.buttonLSF2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonLSF2.Location = new System.Drawing.Point(534, 989);
+            this.buttonLSF2.Location = new System.Drawing.Point(381, 989);
             this.buttonLSF2.Name = "buttonLSF2";
             this.buttonLSF2.Size = new System.Drawing.Size(112, 29);
             this.buttonLSF2.TabIndex = 61;
@@ -721,13 +722,24 @@
             // 
             this.qrcodebuttonFOF1.BackColor = System.Drawing.Color.White;
             this.qrcodebuttonFOF1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.qrcodebuttonFOF1.Location = new System.Drawing.Point(400, 989);
+            this.qrcodebuttonFOF1.Location = new System.Drawing.Point(247, 989);
             this.qrcodebuttonFOF1.Name = "qrcodebuttonFOF1";
             this.qrcodebuttonFOF1.Size = new System.Drawing.Size(112, 29);
             this.qrcodebuttonFOF1.TabIndex = 72;
             this.qrcodebuttonFOF1.Text = "QR Code";
             this.qrcodebuttonFOF1.UseVisualStyleBackColor = false;
             this.qrcodebuttonFOF1.Click += new System.EventHandler(this.qrcodebuttonFOF1_Click);
+            // 
+            // newformbutton1
+            // 
+            this.newformbutton1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.newformbutton1.Location = new System.Drawing.Point(1112, 990);
+            this.newformbutton1.Name = "newformbutton1";
+            this.newformbutton1.Size = new System.Drawing.Size(112, 28);
+            this.newformbutton1.TabIndex = 73;
+            this.newformbutton1.Text = "New Form";
+            this.newformbutton1.UseVisualStyleBackColor = true;
+            this.newformbutton1.Click += new System.EventHandler(this.newformbutton1_Click);
             // 
             // FillOutForm
             // 
@@ -737,6 +749,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Romero___Rymirox__Contact_Tracing.Properties.Resources.Sole__5_;
             this.ClientSize = new System.Drawing.Size(1244, 1043);
+            this.Controls.Add(this.newformbutton1);
             this.Controls.Add(this.qrcodebuttonFOF1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.saveButtonFOF1);
@@ -874,5 +887,6 @@
         private Button saveButtonFOF1;
         private Label label3;
         private Button qrcodebuttonFOF1;
+        private Button newformbutton1;
     }
 }

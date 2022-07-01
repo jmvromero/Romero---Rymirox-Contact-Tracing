@@ -110,9 +110,6 @@ namespace Romero___Rymirox__Contact_Tracing
                 }
 
                 MessageBox.Show("Your contact tracing was successful. Check in your Folder.");
-                this.Hide();
-                ContinueOptions continueOptions = new ContinueOptions();
-                continueOptions.ShowDialog();
 
             }
     }
@@ -176,6 +173,7 @@ namespace Romero___Rymirox__Contact_Tracing
         {
             if (generatedForm)
             {
+                generatedForm = true;
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                 pictureBoxFOF1.Image.Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg");
                 
@@ -218,14 +216,22 @@ namespace Romero___Rymirox__Contact_Tracing
             }
             else
             {
+                var text = datetextBox1.Text + " " + textBoxFOF1.Text + " " + textBoxFOF2.Text + " " + textBoxFOF3.Text + " " + comboBoxFOF1.Text + " " + textBoxFOF4.Text + " " + textBoxFOF5.Text + " " + textBoxFOF6.Text + " " + textBoxFOF7.Text + " " + textBoxFOF8.Text + " " + textBoxFOF9.Text + " " + textBoxFOF10.Text + " " + textBoxFOF11.Text + " " + comboBoxFOF2.Text + " " + comboBoxFOF3.Text + " " + comboBoxFOF4.Text;
                 pictureBoxFOF1.SizeMode = PictureBoxSizeMode.StretchImage;
-                Zen.Barcode.CodeQrBarcodeDraw qrBarcodeDraw = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-                pictureBoxFOF1.Image = qrBarcodeDraw.Draw(datetextBox1.Text + " " + "Rymirox Contact Tracing" + " " + "Personal Information" + " " + "First Name: " + textBoxFOF1.Text + " " + "Last Name: " + textBoxFOF2.Text + " " + "Middle Name: " + textBoxFOF3.Text + " " + "Gender: " + comboBoxFOF1.Text + " " + "Birthdate: " + textBoxFOF4.Text + " ", Height);
-
-
+                QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                var MyData = QG.CreateQrCode("Rymirox Contact Tracing " + datetextBox1.Text + " (Personal Information) -" + " (1) First Name: " + textBoxFOF1.Text + " (2) Last Name: " + textBoxFOF2.Text + " (3) Middle Name: " + textBoxFOF3.Text + " (4) Gender: " + comboBoxFOF1.Text + " (5) Birthdate: " + textBoxFOF4.Text + " " + "(Contact Address) - " + " " + "(1) " + "Contact No: " + textBoxFOF5.Text + " " + "(2) " + "Email Address: " + textBoxFOF6.Text + " " + "(Location Address) -" + " " + "(1) " + "Country: " + textBoxFOF7.Text + " " + "(2) " + "House Number: " + textBoxFOF8.Text + " " + "(3) " + "Barangay: " + textBoxFOF9.Text + " " + "(4) " +  "Province: " + textBoxFOF10.Text + " " + "(5) " + "City: " + textBoxFOF11.Text + " " + "(Health Check) -" + " " + "(1) " + "Do you have any of the following symptom/s: " + comboBoxFOF2.Text + " " + "(2) " + "Do you have pending COVID-19 Test result?: " + comboBoxFOF3.Text + " " + "(3) " + "Have you been exposed to a sick person or suspect, probable or confirmed COVID-19 case in the past 14 days?: " + comboBoxFOF4.Text, QRCoder.QRCodeGenerator.ECCLevel.L);
+                var code = new QRCoder.QRCode(MyData);
+                pictureBoxFOF1.Image = code.GetGraphic(50);
+                MessageBox.Show("Your QR Code is now generated");
             }
 
         }
 
+        private void newformbutton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContinueOptions continueOptions = new ContinueOptions();
+            continueOptions.ShowDialog();
+        }
     }
 }
