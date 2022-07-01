@@ -260,6 +260,7 @@
             this.Controls.Add(this.labelLF1);
             this.Controls.Add(this.labelLF3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ListingForm";
             this.Text = "ListingForm";
             this.ResumeLayout(false);

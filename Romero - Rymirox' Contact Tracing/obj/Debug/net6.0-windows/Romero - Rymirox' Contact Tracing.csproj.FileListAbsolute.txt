@@ -27,3 +27,11 @@ C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox'
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.ListingForm.resources
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero - Rymirox' Contact Tracing.csproj.CopyComplete
 C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.FindingRecordOptions.resources
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\obj\Debug\net6.0-windows\Romero___Rymirox__Contact_Tracing.QRCodeScannerForm.resources
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\ZKWeb.System.Drawing.dll
+C:\Users\Romero\source\repos\Romero - Rymirox' Contact Tracing\Romero - Rymirox' Contact Tracing\bin\Debug\net6.0-windows\ZXing.ZKWeb.System.Drawing.dll

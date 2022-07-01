@@ -29,8 +29,8 @@ namespace Romero___Rymirox__Contact_Tracing
         private void label1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ListingForm listingForm = new ListingForm();
-            listingForm.ShowDialog();
+            FindingRecordOptions findingRecordOptions = new FindingRecordOptions();
+            findingRecordOptions.ShowDialog();
         }
 
         private void StartingScreenForm_Load(object sender, EventArgs e)

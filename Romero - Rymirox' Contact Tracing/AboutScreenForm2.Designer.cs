@@ -134,7 +134,7 @@
             this.Controls.Add(this.labelASF2_2);
             this.Controls.Add(this.labelASF2_1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "AboutScreenForm2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rymirox\' Contact Tracing";
